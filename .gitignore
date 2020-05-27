@@ -4,3 +4,4 @@
 *.log
 *.last
 *.png
+__pycache__/
