@@ -5,3 +5,5 @@
 *.last
 *.png
 __pycache__/
+profiles/
+final_normal_r_SVS13.cont.final-1.image-zoom-stars/
