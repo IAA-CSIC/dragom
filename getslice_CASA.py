@@ -8,8 +8,8 @@ from taskinit import *
 # origin and slice_length in pixels
 # angle_step in degrees
 
-#origin_A = 634 377
-#origin_B = 606 376
+#origin_A = 632.353 377.38
+#origin_B = 607.779 377.38
 #slice_length = 160 px
 
 def get_p2(p1, slice_length, ang): #p1 = [x0,y0], slice_length in pixels, ang en degrees
