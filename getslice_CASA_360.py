@@ -40,9 +40,12 @@ output_name = input(">>Output name? ('file_out'): ")
 
 
 ia.open(input_image)
+info = ia.summary
 
-bright_u = ia.brightnessunit()
-hdrtxt="Dist (pix)\tValue({})\t(pix=0.012arcsec)".format(bright_u)  #CASA does'n uses python 3 yet
+bright_u = info()['unit']
+pix_size = info()['incr'][1]*180/np.pi*3600 # size of a pixel in arcsec
+
+hdrtxt='Dist (pix)\tValue({})\t(pix = {} arcsec)'.format(bright_u,pix_size)  #CASA does'n uses python 3 yet
 
 ang = np.arange(0,360,angle_step)
 ptos = [get_p2(origin,slice_length,a) for a in ang]
