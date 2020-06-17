@@ -80,3 +80,6 @@ def spiral_log(r, ro, a):
 
 def spiral_arch(ang, ro, b):
     return ro + b * ang
+
+def spiral_exp(r, a, b, c):
+    return a*np.exp(r*b)+c
