@@ -13,11 +13,10 @@ def get_values(pixels):
       values.append(val)
     return values
 
-
-input_image = input(">>Image? ('file_in'): ")
-origin = input(">>Origin Pixels? ('pix_ini.dat'): ")
-end = input(">>End Pixels? ('pix_end.dat'): ")
-output_name = input(">>Output name? ('file_out'): ")
+input_image = ''
+origin = ''
+end = ''
+output_name = ''
 
 ia.open(input_image)
 info = ia.summary
